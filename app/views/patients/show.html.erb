@@ -1,2 +1,5 @@
-<h1>Patients#show</h1>
-<p>Find me in app/views/patients/show.html.erb</p>
+<% @patient.appoinments.each do |appointment| %>
+  <%= appointment.appointment_datetime.strftime("%B %d, %Y at %H:%M")%>
+  <br />
+  <%= link_to appointment.doctor.name, doctor_path(appointment.doctor)%>
+  <% end %>
