@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
 
+  get 'patients/show'
+
+  get 'patients/index'
+
   get 'doctors/show'
 
   get 'doctors/index'
