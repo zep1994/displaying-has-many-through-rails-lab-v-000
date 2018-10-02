@@ -1,7 +1,7 @@
 require 'date'
 require 'time'
 
-class Appointment < ActiveRecord
+class Appointment < ActiveRecord::Base
   belongs_to :doctor
   belongs_to :patient
 
